@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="generalInfo">
+      <p>Name?</p>
+      <form>
+        <input type="text">
+      </form>
+      <p>Date of Birth?</p>
+      <form>
+        <input type="date">
+      </form>
+      <p>Gender?</p>
+      <form method="post">
+        <label><input type="radio" name="field"> Female</label>
+        <label><input type="radio" name="field"> Male</label>
+        <label><input type="radio" name="field"> Non-Binary</label>
+        <label><input type="radio" name="field"> Other/Prefer Not to Disclose</label>
+      </form>
+      </form>
+      <p>Extroverted/Introverted?</p>
+      <form method="post">
+        <label><input type="radio" name="field"> 
+ Extroverted</label>
+        <label><input type="radio" name="field"> Ambiverted</label>
+        <label><input type="radio" name="field"> Introvert</label>
+      </form>
+    </div>
+    <div id = "questionaire">
+      <p>What is your field of study?</p>
+      <select id="s0"></select>
+
+      <p>Please rank the importance of this aspect</p>
+      <form method="post" id="i0">
+        <label><input type="radio" name="field"> No Importance</label>
+        <label><input type="radio" name="field"> Slight Significance</label>
+        <label><input type="radio" name="field"> Fairly Significant</label>
+        <label><input type="radio" name="field"> Mandatory</label>
+      </form>
+
+      <p>What type of work environment do you prefer?</p>
+      <select id="s1"></select>
+
+      <p>Please rank the importance of this aspect</p>
+      <form method="post" id="i1">
+        <label><input type="radio" name="env"> No Importance</label>
+        <label><input type="radio" name="env"> Slight Significance</label>
+        <label><input type="radio" name="env"> Fairly Significant</label>
+        <label><input type="radio" name="env"> Mandatory</label>
+      </form>
+
+      <p>Which shift would you like to work?</p>
+      <select id="s2"></select>
+
+      <p>Please rank the importance of this aspect</p>
+      <form method="post" id="i2">
+        <label><input type="radio" name="shift"> No Importance</label>
+        <label><input type="radio" name="shift"> Slight Significance</label>
+        <label><input type="radio" name="shift"> Fairly Significant</label>
+        <label><input type="radio" name="shift"> Mandatory</label>
+      </form>
+      
+      <p>What do you want to gain from this?</p>
+      <form>
+        <textarea>
+        </textarea>
+      </form>
+
+      
+    </div>
+    <div id = submitbutton>
+      <button onclick="submitQuestionnaire()">Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
